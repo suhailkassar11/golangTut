@@ -11,4 +11,17 @@ func main() {
 	fruitList[2] = "peach"
 	fruitList[3] = "mango"
 	fmt.Println("the array is", fruitList)
+	var number [5]int
+	
+	number[0]=1
+	number[1]=2
+	number[2]=8
+	number[3]=6
+	number[4]=5
+
+	fmt.Println("the array is", number)
+
+	for i:=0;i<5;i++{
+		fmt.Print(number[i]," ")
+	}
 }
