@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"log"
 )
 
 func main() {
@@ -13,4 +14,13 @@ func main() {
 	fmt.Println("Enter your name:")
 	name, _ := reader.ReadString('\n')
 	fmt.Println("Hello, ", name)
+	age,_:=reader.ReadString('\n')
+	fmt.Println("age is      ", age)
+	count:=0
+	fmt.Println("please enter count")
+	_,err:=fmt.Scanf("%d",&count)
+	if err!=nil{
+		log.Fatal(err)
+	}
+	fmt.Println("counting is",count)
 }
