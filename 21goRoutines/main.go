@@ -11,6 +11,7 @@ var wg sync.WaitGroup
 func main() {
 	// go greeter("hello")
 	// greeter("world")
+	fmt.Println("welcome to go tut")
 	websiteList := []string{
 		"https://www.google.com",
 		"https://www.bing.com",
